@@ -33,13 +33,9 @@ Double-click `index.html`, or open the folder in VS Code and use a local develop
 
 GitHub will provide a public URL after deployment.
 
-## Privacy note
 
-Only publish contact information you are comfortable making public. A dedicated professional email is often preferable to publishing personal phone numbers or home-address information.
 
 
 ## Hero background image
-
-The hero section uses an Unsplash-hosted jet photo as a CSS background image with a gradient overlay so the text stays readable. An internet connection is required for the hero image to load.
 
 Photo source: Craig Manners on Unsplash — https://unsplash.com/photos/a-fighter-jet-flying-in-the-sky-LVoT_6Qmwa8
