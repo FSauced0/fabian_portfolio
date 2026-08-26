@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fabian Saucedo — Aerospace Engineer portfolio featuring aerodynamics, CFD, aircraft design, testing, and engineering projects." />
+  <title>Fabian Saucedo | Aerospace Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">FS</a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Aerospace Engineering • Aerodynamics • CFD • Testing</p>
+          <h1>Fabian Saucedo</h1>
+          <p class="hero-lead">
+            Aerospace engineer focused on aerodynamic analysis, computational modeling,
+            experimental testing, and multidisciplinary vehicle design.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+          </div>
+          <div class="quick-facts">
+            <span>UT Austin Aerospace Engineering</span>
+            <span>MATLAB • Python • C++</span>
+            <span>OpenFOAM • XFLR5 • CAD</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="hero-card-content">
+            <span class="status-dot"></span>
+            <p>Engineering interests</p>
+            <h2>Model. Test. Design.</h2>
+            <p>
+              Connecting physics-based analysis with practical engineering decisions
+              for aircraft and aerospace systems.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Engineering with a systems perspective.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            I earned my B.S. in Aerospace Engineering from The University of Texas at Austin.
+            My work has included aerodynamics, computational fluid dynamics, aircraft design,
+            structural analysis, wind-tunnel testing, flight testing, and technical documentation.
+          </p>
+          <p>
+            I am especially interested in using computational and experimental methods together:
+            building models, testing assumptions, interpreting data, and turning results into
+            better engineering decisions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="experience">
+      <div class="container">
+        <p class="section-kicker">Experience</p>
+        <h2>Selected engineering experience</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div>
+              <p class="timeline-meta">Senior Design • UT Austin</p>
+              <h3>Aerodynamics & Structural Lead — VTOL Wildfire Aircraft</h3>
+              <p>
+                Led aerodynamic and structural design work for a VTOL aircraft developed for a
+                wildfire-response mission. Supported wing and empennage design, aircraft performance,
+                weight and CG tracking, risk assessment, manufacturing, structural testing, and flight testing.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div>
+              <p class="timeline-meta">Undergraduate Research</p>
+              <h3>Airfoil Aerodynamics & Wind-Tunnel Testing</h3>
+              <p>
+                Investigated vortex-generator effects on a Clark Y-14 airfoil using pressure measurements,
+                force data, lift/drag analysis, and iterative improvements to the experimental model.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div>
+              <p class="timeline-meta">Coursework & Technical Projects</p>
+              <h3>High-Speed Aerodynamics, CFD & Flight Mechanics</h3>
+              <p>
+                Applied numerical and experimental methods to compressible flow, shock-wave behavior,
+                aircraft performance, stability, controls, and aerodynamic analysis.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-kicker">Projects</p>
+        <div class="section-heading-row">
+          <h2>Technical work</h2>
+          <p>Projects that combine modeling, design, programming, and testing.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <p class="tag">MATLAB • Atmospheric Modeling</p>
+            <h3>Dryden Turbulence Model</h3>
+            <p>
+              MATLAB model for generating longitudinal, lateral, and vertical gust-velocity
+              time histories using altitude-dependent turbulence parameters.
+            </p>
+            <a href="#" class="text-link repo-link" data-placeholder="true">GitHub repository ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <p class="tag">OpenFOAM • Compressible Flow</p>
+            <h3>Mach 3 Double-Ramp CFD</h3>
+            <p>
+              Simulated high-speed flow over double-ramp configurations and evaluated shock structure,
+              pressure behavior, and trends against compressible-flow theory.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <p class="tag">Aircraft Design • XFLR5 • Testing</p>
+            <h3>VTOL Wildfire Aircraft</h3>
+            <p>
+              Multidisciplinary aircraft design involving aerodynamic sizing, structural decisions,
+              system integration, manufacturing, test planning, and flight validation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">04</div>
+            <p class="tag">Wind Tunnel • Experimental Aerodynamics</p>
+            <h3>Vortex Generator Research</h3>
+            <p>
+              Compared airfoil aerodynamic behavior with vortex generators using wind-tunnel pressure
+              and force measurements across multiple angles of attack.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">05</div>
+            <p class="tag">Schlieren • Supersonic Flow</p>
+            <h3>High-Speed Aerodynamics Lab</h3>
+            <p>
+              Studied oblique shocks, expansion waves, detached shocks, and compressible-flow phenomena
+              using Schlieren and shadowgraph visualization.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">06</div>
+            <p class="tag">Raspberry Pi • CAD • Robotics</p>
+            <h3>Tracked Robotics Platform</h3>
+            <p>
+              Personal robotics project integrating a compact tracked chassis, embedded computing,
+              camera vision, mechanical arms, servo actuation, and custom CAD.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="skills">
+      <div class="container">
+        <p class="section-kicker">Capabilities</p>
+        <h2>Technical skills</h2>
+
+        <div class="skills-grid">
+          <div>
+            <h3>Engineering</h3>
+            <div class="pill-wrap">
+              <span>Aerodynamics</span><span>CFD</span><span>Flight Mechanics</span>
+              <span>Structural Analysis</span><span>Wind-Tunnel Testing</span>
+              <span>Aircraft Design</span><span>Experimental Testing</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Software & Programming</h3>
+            <div class="pill-wrap">
+              <span>MATLAB</span><span>Python</span><span>C++</span><span>C</span>
+              <span>OpenFOAM</span><span>XFLR5</span><span>Git</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>Engineering Workflow</h3>
+            <div class="pill-wrap">
+              <span>CAD</span><span>Trade Studies</span><span>Risk Analysis</span>
+              <span>Test Planning</span><span>Technical Reports</span>
+              <span>Design Reviews</span><span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Interested in engineering, research, or collaboration?</h2>
+          <p>
+            I am open to connecting with engineers, researchers, and organizations working on
+            aerospace, mechanical systems, simulation, testing, and advanced vehicle development.
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Fabian Saucedo</p>
+      <p>Built with HTML, CSS & JavaScript · Hero photo: <a href="https://unsplash.com/photos/a-fighter-jet-flying-in-the-sky-LVoT_6Qmwa8" target="_blank" rel="noopener">Craig Manners / Unsplash</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
