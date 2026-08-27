@@ -185,11 +185,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #06111a;
 }
 
 .vtol-project-image {
-  width: 85%;
-  height: 85%;
+  width: 72%;
+  height: 72%;
   object-fit: contain;
 }
 .hero-vignette {
