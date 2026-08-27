@@ -1242,6 +1242,10 @@ body {
   text-shadow: 0 0 24px rgba(112,220,255,.06);
 }
 
+@media (max-width: 900px) {
+  .hero-image {
+    background-position: 66% 50%;
+  }
 
 
   .telemetry-card {
