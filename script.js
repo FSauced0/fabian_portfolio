@@ -70,5 +70,22 @@ const sectionObserver = new IntersectionObserver((entries) => {
     }
   });
 }, { rootMargin: "-35% 0px -55% 0px", threshold: 0 });
+const music = document.getElementById("backgroundMusic");
+const soundButton = document.getElementById("soundButton");
 
+music.volume = 0.25;
+
+let musicPlaying = false;
+
+soundButton.addEventListener("click", async () => {
+  if (!musicPlaying) {
+    await music.play();
+    musicPlaying = true;
+    soundButton.textContent = "SOUND ON";
+  } else {
+    music.pause();
+    musicPlaying = false;
+    soundButton.textContent = "SOUND OFF";
+  }
+});
 sections.forEach(section => sectionObserver.observe(section));
