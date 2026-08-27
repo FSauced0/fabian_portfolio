@@ -1,6 +1,6 @@
 
 
-Open `index.html` in a browser to preview locally.
+URL: https://fsauced0.github.io/fabian_portfolio/
 
 Files:
 - `index.html` — page structure/content
