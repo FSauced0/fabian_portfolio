@@ -1,4 +1,4 @@
-# Fabian Saucedo — Aerospace / Interstellar Engineering Portfolio
+
 
 Open `index.html` in a browser to preview locally.
 
@@ -7,5 +7,6 @@ Files:
 - `styles.css` — visual design and responsive layout
 - `script.js` — navigation, reveal animations, and parallax
 - `herosplash-jet.jpg` — hero splash jet artwork
+- `space.mp3` — Background music: Space- The_Mountain(pixabay)
 
 Before publishing, replace the placeholder email, GitHub, and LinkedIn links in `index.html`.
