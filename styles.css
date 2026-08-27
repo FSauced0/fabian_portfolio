@@ -200,7 +200,7 @@ a {
 }
 
 .hero-content {
-  width: min(720px, 58vw);
+  width: min(980px, 70vw);
   position: relative;
   z-index: 5;
 }
