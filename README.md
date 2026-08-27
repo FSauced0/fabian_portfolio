@@ -1,6 +1,7 @@
 # Fabian Saucedo Portfolio Website
 
 A responsive personal engineering portfolio built with plain HTML, CSS, and JavaScript.
+URL: https://fsauced0.github.io/fabian_portfolio/
 
 ## Files
 
