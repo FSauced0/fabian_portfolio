@@ -179,20 +179,24 @@ a {
     linear-gradient(90deg, rgba(3,10,16,.98) 0%, rgba(3,10,16,.83) 35%, rgba(3,10,16,.19) 69%, rgba(3,10,16,.57) 100%),
     radial-gradient(circle at 75% 45%, rgba(95,190,223,.14), transparent 36%);
 }
-.project-visual {
+.visual-vtol {
   position: relative;
   overflow: hidden;
 }
 
-.project-visual img {
-  width: 100%;
+.visual-vtol img {
+  position: absolute;
+
+  top: 0;
+  left: -50px;
+
+  width: calc(100% + 100px);
   height: 100%;
+
+  max-width: none;
+
   object-fit: cover;
   display: block;
-}
-
-.visual-vtol img {
-  transform: translateX(-30px) scale(1.05);
 }
 .hero-vignette {
   position: absolute;
