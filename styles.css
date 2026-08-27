@@ -203,6 +203,7 @@ a {
   width: min(1000px, 72vw);
   position: relative;
   z-index: 5;
+  transform: translateY(-200px);
 }
 
 .eyebrow {
