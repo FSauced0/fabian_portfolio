@@ -330,12 +330,56 @@
   <source src="space.mp3" type="audio/mpeg">
   </audio>
   
-  <button id="soundButton" class="sound-button">
+  <button id="soundButton" class="sound-button" type="button" aria-pressed="false" aria-label="Toggle background music">
     SOUND OFF
   </button>
   
  
 
   <script src="script.js"></script>
+
+  <script>
+    (() => {
+      const music = document.getElementById("backgroundMusic");
+      const button = document.getElementById("soundButton");
+
+      if (!music || !button) return;
+
+      music.volume = 0.20;
+
+      const setButton = (playing) => {
+        button.textContent = playing ? "SOUND ON" : "SOUND OFF";
+        button.setAttribute("aria-pressed", playing ? "true" : "false");
+      };
+
+      button.addEventListener("click", async () => {
+        try {
+          if (music.paused) {
+            await music.play();
+            setButton(true);
+          } else {
+            music.pause();
+            setButton(false);
+          }
+        } catch (err) {
+          console.error("Could not play space.mp3:", err);
+          button.textContent = "AUDIO FILE ERROR";
+        }
+      });
+
+      music.addEventListener("play", () => setButton(true));
+      music.addEventListener("pause", () => setButton(false));
+
+      music.addEventListener("error", () => {
+        console.error(
+          "space.mp3 could not be loaded. Put space.mp3 in the same folder as index.html."
+        );
+        button.textContent = "AUDIO FILE MISSING";
+      });
+
+      setButton(false);
+    })();
+  </script>
+
 </body>
 </html>
