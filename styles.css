@@ -189,12 +189,12 @@ a {
 }
 
 .vtol-project-image {
-  width: 82%;
-  height: 82%;
+  width: 94%;
+  height: 94%;
   object-fit: contain;
   display: block;
 }
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .vtol-project-image {
     width: 100%;
     height: 100%;
