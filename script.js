@@ -1,124 +1,44 @@
-const toggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
+const menuButton = document.getElementById("menuButton");
+const nav = document.getElementById("nav");
 
-// Mobile navigation toggle
-toggle?.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', String(open));
+menuButton.addEventListener("click", () => {
+  const isOpen = nav.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(isOpen));
 });
 
-// Close mobile navigation after clicking a link
-document.querySelectorAll('.nav a').forEach(link => {
-  link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    toggle?.setAttribute('aria-expanded', 'false');
+document.querySelectorAll("#nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
   });
 });
 
-// Automatically update footer year
-const yearElement = document.getElementById('year');
+document.getElementById("year").textContent = `© ${new Date().getFullYear()}`;
 
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
-}
-
-// Smooth scrolling for internal navigation links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', event => {
-    const targetId = link.getAttribute('href');
-
-    if (!targetId || targetId === '#') return;
-
-    const target = document.querySelector(targetId);
-
-    if (target) {
-      event.preventDefault();
-
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  });
-});
-
-// Change header appearance after scrolling
-const header = document.querySelector('.site-header');
-
-window.addEventListener('scroll', () => {
-  if (!header) return;
-
-  if (window.scrollY > 40) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-// Highlight active navigation section
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav a');
-
-function updateActiveNavigation() {
-  let currentSection = '';
-
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 180;
-    const sectionHeight = section.offsetHeight;
-
-    if (
-      window.scrollY >= sectionTop &&
-      window.scrollY < sectionTop + sectionHeight
-    ) {
-      currentSection = section.getAttribute('id');
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove('active');
-
-    if (link.getAttribute('href') === `#${currentSection}`) {
-      link.classList.add('active');
-    }
-  });
-}
-
-window.addEventListener('scroll', updateActiveNavigation);
-updateActiveNavigation();
-
-// Placeholder GitHub project links
-document.querySelectorAll('[data-placeholder="true"]').forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-
-    alert(
-      'Replace this placeholder link with the GitHub repository URL in index.html.'
-    );
-  });
-});
-
-// Simple reveal animation when sections enter the screen
-const revealElements = document.querySelectorAll(
-  '.project-card, .timeline-item, .info-card, .skills-group'
+const revealTargets = document.querySelectorAll(
+  ".section-heading, .about-copy, .metric-card, .project-card, .system-panel, .contact-panel"
 );
 
-if ('IntersectionObserver' in window) {
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.15
-    }
-  );
+revealTargets.forEach(el => el.classList.add("reveal"));
 
-  revealElements.forEach(element => {
-    element.classList.add('reveal');
-    observer.observe(element);
-  });
-}
+const revealObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
+
+revealTargets.forEach(el => revealObserver.observe(el));
+
+window.addEventListener("scroll", () => {
+  const y = window.scrollY;
+  const aircraft = document.querySelector(".aircraft-wrap");
+  if (aircraft && window.innerWidth > 700) {
+    aircraft.style.marginTop = `${Math.min(y * 0.07, 55)}px`;
+  }
+});
