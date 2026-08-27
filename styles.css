@@ -186,16 +186,11 @@ a {
 }
 
 .visual-vtol img {
-  width: 110%;
-  height: 110%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
-
-  position: absolute;
-  top: 50%;
-  left: 48%;
-
-  transform: translate(-60%, -50%);
 }
 
 .hero-vignette {
