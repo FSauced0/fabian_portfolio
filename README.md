@@ -1,16 +1,11 @@
-# Fabian Saucedo Portfolio Website
+# Fabian Saucedo — Aerospace / Interstellar Engineering Portfolio
 
-A responsive personal engineering portfolio built with plain HTML, CSS, and JavaScript.
-URL: https://fsauced0.github.io/fabian_portfolio/
+Open `index.html` in a browser to preview locally.
 
-## Files
+Files:
+- `index.html` — page structure/content
+- `styles.css` — visual design and responsive layout
+- `script.js` — navigation, reveal animations, and parallax
+- `herosplash-jet.png` — hero splash jet artwork
 
-- `index.html` — website content and layout
-- `styles.css` — styling and responsive design
-- `script.js` — mobile navigation and small interactions
-
-
-
-## Hero background image
-
-Photo source: Craig Manners on Unsplash — https://unsplash.com/photos/a-fighter-jet-flying-in-the-sky-LVoT_6Qmwa8
+Before publishing, replace the placeholder email, GitHub, and LinkedIn links in `index.html`.
