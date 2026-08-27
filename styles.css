@@ -192,7 +192,7 @@ a {
 }
 
 .visual-vtol img {
-  transform: translateX(-70px) scale(1.05);
+  transform: translateX(-30px) scale(1.05);
 }
 .hero-vignette {
   position: absolute;
