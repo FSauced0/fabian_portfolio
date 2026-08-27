@@ -1,6 +1,6 @@
 
 
-URL: https://fsauced0.github.io/fsauced0/
+URL: https://fsauced0.github.io/fabian_portfolio/
 
 Files:
 - `index.html` — page structure/content
