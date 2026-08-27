@@ -1295,3 +1295,34 @@ body {
 .nav a.active::after {
   right: 0;
 }
+.sound-button {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  z-index: 9999;
+
+  padding: 12px 18px;
+
+  border: 1px solid rgba(120, 220, 255, 0.5);
+  background: rgba(4, 15, 24, 0.75);
+
+  color: #a9eaff;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.25s ease;
+}
+
+.sound-button:hover {
+  background: rgba(90, 200, 255, 0.15);
+  border-color: #8eeaff;
+
+  box-shadow:
+    0 0 15px rgba(90, 210, 255, 0.25);
+}
