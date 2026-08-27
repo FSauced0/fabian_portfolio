@@ -586,16 +586,6 @@ a {
 
 .top-left { left: 19px; top: 16px; }
 
-.visual-vtol {
-  display: grid;
-  place-items: center;
-  background:
-    radial-gradient(circle at center, rgba(57,163,203,.19), transparent 43%),
-    linear-gradient(rgba(94,195,233,.05) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(94,195,233,.05) 1px,transparent 1px),
-    #07131c;
-  background-size: auto, 26px 26px, 26px 26px, auto;
-}
 
 .drone-svg {
   width: 76%;
