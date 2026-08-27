@@ -9,4 +9,4 @@ Files:
 - `herosplash-jet.jpg` — hero splash jet artwork
 - `space.mp3` — Background music: Space- The_Mountain(pixabay)
 
-Before publishing, replace the placeholder email, GitHub, and LinkedIn links in `index.html`.
+
