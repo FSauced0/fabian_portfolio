@@ -194,10 +194,9 @@ a {
 }
 
 .vtol-project-image {
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 92%;
   object-fit: contain;
-  display: block;
 }
 .hero-vignette {
   position: absolute;
