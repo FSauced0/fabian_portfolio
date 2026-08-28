@@ -588,8 +588,14 @@ a {
   position: relative;
   min-height: 310px;
   overflow: hidden;
-  border-bottom: 1px solid var(--line);
-  color: #87daf6;
+}
+.project-visual > img.project-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .featured .project-visual {
